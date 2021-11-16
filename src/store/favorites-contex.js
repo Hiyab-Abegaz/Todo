@@ -9,7 +9,7 @@ const FavoritesContext =  createContext({
 });
 
 function FavoritesContextProvider(props){
-    const [UserFavorites,setUserFavorites] = uesState([]);
+    const [UserFavorites,setUserFavorites] = useState([]);
 
     function addFavoriteHandler(favoriteMeetup){
         setUserFavorites(prevUserFavorites => {

@@ -4,10 +4,13 @@ import { BrowserRouter } from 'react-router-dom'
 
 import './index.css';
 import App from './App';
+import FavoritesContext from './store/favorites-contex';
 
 ReactDOM.render(
+<FavoritesContext>
 <BrowserRouter>
 <App />
-</BrowserRouter>,
+</BrowserRouter>
+</FavoritesContext>,
 document.getElementById('root')
 );
